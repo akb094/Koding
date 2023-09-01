@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/72f28316c6.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/2.png">
+    <link rel="stylesheet" href="s1.css">
+</head>
+
+<body>
+    <form method="POST" name="google-sheet">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="box">
+                <i class="fa fa-user"></i>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required autofocus>
+
+            </div>
+            <div class="box">
+                <i class="fa fa-list-alt"></i>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+
+
+            </div>
+            <div class="box">
+                <i class="fa fa-comments"></i>
+                <input type="text" name="messege" id="messege" placeholder="Enter your query" required autofocus>
+
+            </div>
+
+            <input class="btn" type="Submit" name="Submit">
+
+        </div>
+    </form>
+    <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaJ9-OPQJF339Mi-yCFefvB-zndQqFHTZjG2if88GFMjD-t4167QF4G3dNibkZnTof/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We will get back to You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        }
+        )
+    </script>
+</body>
+
+</html>
