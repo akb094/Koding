@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: url(pics/1.jpg) no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.container {
+    font-family: 'Alkatra', cursive;
+    box-shadow: 10px 10px #000000;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 60px;
+    margin: 10px;
+    width: 30%;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transition: transform 0.4s;
+    background-color: rgb(9, 8, 22);
+    /*backdrop-filter: blur(13px);*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+}
+
+.container h1 {
+    width: 50%;
+    font-size: 40px;
+    border-bottom: 5px solid #000000;
+    margin-bottom: 25px;
+    padding: 13px 0px;
+}
+
+.box {
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    margin: 30px 0px;
+}
+
+.box input {
+    font-family: 'Alkatra', cursive;
+    background: none;
+    width: 75%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    width: 50%;
+    margin: 12px 0;
+    padding: 10px 21px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid purple;
+    font-size: 18px;
+    background: none;
+    color: #ffffff;
+}
+
+.box i {
+    width: 25px;
+    text-align: center;
+
+
+}
+
+.btn:hover {
+    color: black;
+    opacity: 0.5;
+    background: white;
+    color: purple;
+}
+
+.container:hover {
+    transform: scale(1.15);
+    /*background-color:white;*/
+    border: 4px solid #000000;
+    backdrop-filter: blur(13px);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 60px;
+    margin: 10px;
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    /*opacity:0.4;*/
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
