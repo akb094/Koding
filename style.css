@@ -36,7 +36,8 @@ nav {
     position: fixed;
     z-index: 1;
     vertical-align: middle;
-    /*background:#262626;*/
+    /*background:#262626;
+    */
     backdrop-filter: blur(30px);
     border: 3px solid;
     border-radius: 10px;
@@ -45,7 +46,11 @@ nav {
     height: 80px;
     align-items: center;
     justify-content: space-around;
-    transition: 1.5s;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
 }
 
 
@@ -70,20 +75,22 @@ nav ul li a {
 
 nav ul li a::after {
     /*transition: all 2s ease;
-    */content:"";
+    */
+    content: "";
     width: 0;
     height: 8px;
     background: #ffffff;
     /*opacity: 0.3;
     z-index: -1;
-    */position: absolute;
+    */
+    position: absolute;
     left: 0;
     bottom: -8px;
-    transition:all 0.5s ease;
-    -webkit-transition:all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -ms-transition:all 0.5s ease;
-    -o-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 nav ul li a:hover::after {
